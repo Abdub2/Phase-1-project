@@ -8,24 +8,53 @@
         <link rel="stylesheet" href="css/style.css">
 
     </head>
-    <body>
-        <div class="sign-up-form">
-            <h1>Sign Up </h1>
-            <form>
-                <input type="email" class="input-box" placeholder="Your Email">
-                <input type="password" class="input-box" placeholder="Your Password">
-                <p><span><input type="checkbox"></span>I agree to the terms of services</p>
-                <button type="button" class="signup-btn">Sign Up</button>
+    <body style="background-image: url(background.jpg)">
+        <nav>
+            <label class="logo"> Menu</label>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
 
-            </form>
+
+
+
+
+
+        <div class="sign-up-form" id="logInForm">
+
             <h1>Log in</h1>
             <form>
                 <input type="email" class="input-box" placeholder="Your Email">
                 <input type="password" class="input-box" placeholder="Your Password">
                 <p><span><input type="checkbox"></span>I agree to the terms of services</p>
-                <button type="button" class="signup-btn">Login</button>
+                <button type="submit" class="signup-btn">Login</button>
+
 
             </form>
+        </div>
+        <div class="sign-up-form" id="signUpForm">
+
+            <h2>If new to the webpage then:</h2>
+            <h1>Sign Up </h1>
+            <form>
+                <input type="email" class="input-box" placeholder="Your Email">
+                <input type="password" class="input-box" placeholder="Your Password">
+                <p><span><input type="checkbox"></span>I agree to the terms of services</p>
+                <button type="submit" class="signup-btn">Sign Up</button>
+
+            </form>
+        </div>
+
+        <div id="Pet-finder">
+            <div>
+                <form id="pet-form">
+                    <input type="text" id="search" placeholder="Pet Name">
+                    <input type="submit" name="submit">
+                </form>
+            </div>
 
         </div>
 
@@ -38,7 +67,6 @@
 
 
 
-
-
+        <script src=js/index.js></script>
     </body>
 </html>
