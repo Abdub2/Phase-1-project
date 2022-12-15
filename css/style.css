@@ -2,11 +2,45 @@ body{
     margin:0;
     padding:0;
     font-family: sans-serif;
-   
-
-
 }
 
+*{
+    padding:0;
+    margin:0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+nav{
+    background:brown;
+    height:80px;
+    width: 100%;
+}
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding:0 100px;
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-right:20px;
+}
+nav ul li{
+    display:inline-block;
+    line-height: 80px;
+    margin:0 5px;
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+a.activ,a:hover{
+    background: #1b9bff;
+    transition: .5s;
+}
 .sign-up-form{
     width: 300px;
     box-shadow:0 0 3px 0 rgba(0,0,0,0.3);
