@@ -12,10 +12,10 @@ const numberOfAyahs=document.getElementById('number-of-ayahs')
 const englishNameTranslation=document.getElementById('english-name-translation')
 const ayah=document.getElementById('ayah')
 
-feedbackInfo.display="none";
+feedbackInfo.style.display="none";
 aboutInfo.style.display="none";
 findChap.style.display="none";
-feedbackInfo.display="none";
+
 
 
 
@@ -23,7 +23,7 @@ feedbackInfo.display="none";
 function hideForm(){
     signUpDet.style.display="none";
     logInDet.style.display="none";
-    feedbackInfo.display="none";
+
 }
 
 logInDet.addEventListener('submit',(e)=>{
