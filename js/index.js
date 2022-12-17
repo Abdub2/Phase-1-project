@@ -16,10 +16,6 @@ feedbackInfo.style.display="none";
 aboutInfo.style.display="none";
 findChap.style.display="none";
 
-
-
-
-
 function hideForm(){
     signUpDet.style.display="none";
     logInDet.style.display="none";
@@ -55,7 +51,6 @@ feedback.addEventListener('click',()=>{
     feedbackInfo.style.display="block"
 })
 
-
 submit.addEventListener('click',() =>{
 
     hideForm()
@@ -64,7 +59,6 @@ submit.addEventListener('click',() =>{
         numberOfAyahs.innerText=`Number of Verses: ${data.data.numberOfAyahs}`
         englishNameTranslation.innerText=`English Name Translation: ${data.data.englishNameTranslation}`
     }
-
 
     const input=document.getElementById("search")
 
