@@ -47,3 +47,5 @@ To use this repo on your machine requires some simple steps
 # License
 -[ISC]
 
+# Link to live site on GitHub Pages
+https://abdub2.github.io/Phase-1-project/
