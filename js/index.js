@@ -74,7 +74,5 @@ submit.addEventListener('click',() =>{
     .then((res) => res.json())
     .then((data => renderOneSurah(data)))
 
-    fetch(``)
-
 })
 
