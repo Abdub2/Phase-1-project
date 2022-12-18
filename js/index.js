@@ -76,3 +76,7 @@ submit.addEventListener('click',() =>{
 
 })
 
+document.addEventListener("DOMContentLoaded", ()=>{
+    console.log("The DOM has loaded")
+    submit.onclick
+})
