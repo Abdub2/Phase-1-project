@@ -70,7 +70,7 @@ submit.addEventListener('click',() =>{
 
     const input=document.getElementById("search")
 
-    fetch(`http://api.alquran.cloud/v1/surah/${input.value}`)
+    fetch(`https://api.alquran.cloud/v1/surah/${input.value}`)
     .then((res) => res.json())
     .then((data => renderOneSurah(data)))
 
