@@ -11,6 +11,8 @@ const champName=document.getElementById('chapter-name')
 const numberOfAyahs=document.getElementById('number-of-ayahs')
 const englishNameTranslation=document.getElementById('english-name-translation')
 const ayah=document.getElementById('ayah')
+const revelationType=document.getElementById('revelation-type')
+const surahContainer=document.getElementById('surah-container')
 
 feedbackInfo.style.display="none";
 aboutInfo.style.display="none";
@@ -42,22 +44,28 @@ about.addEventListener('click',()=> {
     findChap.style.display="none";
     feedbackInfo.style.display="none";
     aboutInfo.style.display="block";
+    surahContainer.style.display="none";
 
 
 })
 feedback.addEventListener('click',()=>{
     hideForm()
+    findChap.style.display="none";
+    surahContainer.style.display="none";
     aboutInfo.style.display="none";
     feedbackInfo.style.display="block"
+
 })
 
 submit.addEventListener('click',() =>{
 
     hideForm()
     function renderOneSurah(data){
-        champName.innerText=`English Name: ${data.data.englishName}`
+        champName.innerText=`Arabic Name: ${data.data.englishName}`
         numberOfAyahs.innerText=`Number of Verses: ${data.data.numberOfAyahs}`
         englishNameTranslation.innerText=`English Name Translation: ${data.data.englishNameTranslation}`
+        revelationType.innerText=`Revelation Type: ${data.data.revelationType}`
+
     }
 
     const input=document.getElementById("search")
@@ -65,6 +73,8 @@ submit.addEventListener('click',() =>{
     fetch(`http://api.alquran.cloud/v1/surah/${input.value}`)
     .then((res) => res.json())
     .then((data => renderOneSurah(data)))
+
+    fetch(``)
 
 })
 
